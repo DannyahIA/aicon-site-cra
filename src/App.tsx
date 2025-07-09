@@ -1,21 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import AcompanhamentoOS from './AcompanhamentoOS'; 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './components/Header';
+import Home from './components/Home';
+import AcompanhamentoOS from './components/AcompanhamentoOS';
+import CompreComAGente from './components/CompreConosco';
+import Footer from './components/Footer';
 
-function App() {
+
+const App: React.FC = () => {
   return (
     <Router>
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/acompanhamento-os" element={<AcompanhamentoOS />} />
+        <Route path="/acompanhar-os" element={<AcompanhamentoOS />} />
+        <Route path="/compre" element={<CompreComAGente />} />
       </Routes>
+
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
