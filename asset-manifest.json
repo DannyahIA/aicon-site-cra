@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/aicon-site-cra/static/css/main.76d04db8.css",
-    "main.js": "/aicon-site-cra/static/js/main.0a34d265.js",
+    "main.js": "/aicon-site-cra/static/js/main.27458e62.js",
     "static/js/453.21ab6307.chunk.js": "/aicon-site-cra/static/js/453.21ab6307.chunk.js",
     "index.html": "/aicon-site-cra/index.html",
     "main.76d04db8.css.map": "/aicon-site-cra/static/css/main.76d04db8.css.map",
-    "main.0a34d265.js.map": "/aicon-site-cra/static/js/main.0a34d265.js.map",
+    "main.27458e62.js.map": "/aicon-site-cra/static/js/main.27458e62.js.map",
     "453.21ab6307.chunk.js.map": "/aicon-site-cra/static/js/453.21ab6307.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76d04db8.css",
-    "static/js/main.0a34d265.js"
+    "static/js/main.27458e62.js"
   ]
 }
