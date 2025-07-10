@@ -132,3 +132,31 @@ footer a {
         font-size: 1.5rem;
     }
 }
+
+.compre-header {
+    background-color: #1c2c5b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border-radius: 0;
+    border-right: none;
+}
+
+.search-input:focus {
+    box-shadow: none;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.user-login {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.user-login:hover {
+    opacity: 0.9;
+}

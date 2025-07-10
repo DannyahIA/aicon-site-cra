@@ -3,19 +3,22 @@
     import "bootstrap/dist/css/bootstrap.min.css";
     import ChatWidget from './ChatWidget';
     import { Link } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 
     function Home() {
         return (
             <div className="App">
+                <Header />
                 <main>
                     {/* Hero */}
                     <section id="hero"
                         className="bg-primary text-white text-center py-5 py-lg-6"
                         style={{
-                            backgroundImage: `${process.env.PUBLIC_URL}/hero_bg.avif`, // caminho relativo à pasta public
-                            backgroundSize: 'cover',       // cobre toda a área
-                            backgroundPosition: 'center',  // centraliza a imagem
-                            backgroundRepeat: 'no-repeat'  // evita repetição da imagem
+                            backgroundImage: `${process.env.PUBLIC_URL}/hero_bg.png`,
+                            backgroundSize: 'cover',       
+                            backgroundPosition: 'center',  
+                            backgroundRepeat: 'no-repeat' 
                         }}>
                         <Container className="my-5">
                             <Row className="justify-content-center">
@@ -36,8 +39,9 @@
                                         >
                                             { FaWhatsapp({ className: "fs-4" }) } Solicitar atendimento
                                         </Button>
-                                        <Link to="/acompanhamento-os" style={{ textDecoration: 'none' }}>
+                                        <Link to="/acompanhar-os" style={{ textDecoration: 'none' }}>
                                             <Button
+                                                color="dark"
                                                 variant="outline-light"
                                                 size="lg"
                                                 className="rounded-pill px-4 py-2 shadow-sm"
@@ -189,6 +193,7 @@
                     </section>
                 </main>
                 <ChatWidget />
+                <Footer />
             </div>
         );
     }
